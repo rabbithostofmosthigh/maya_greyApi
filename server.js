@@ -6,9 +6,7 @@ const nodemailer = require("nodemailer"); // nodemailer is use for transporting 
 
 app.use(express.json());
 
-app.use(cors({
-  origin: "https://grayappwebb.netlify.app"
-}));
+app.use(cors());
 
 const PORT = process.env.PORT || 5000; // port to connect to WEB
 
@@ -119,6 +117,7 @@ app.post("/pin", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
 });
+
 
 
 
